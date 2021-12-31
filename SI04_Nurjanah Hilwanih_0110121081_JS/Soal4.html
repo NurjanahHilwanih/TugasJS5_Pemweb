@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker Nurjanah</title>
+</head>
+<body style="background-color: aquamarine;">
+<form action="">
+    <table border="0" align="center">
+        <h1 align = "center">Silahkan Pilih Destinasi</h1>
+        <tr>
+            <td>Destinasi :</td>
+            <td>:</td>
+            <td><select name="" id="gambar" onchange="berubah()">
+                <option value="">--Silahkan Pilih--</option>
+                <option value="seoul">Seoul</option>
+                <option value="bangkok">Bangkok</option>
+                <option value="bali">Bali</option>
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sanghai">Sanghai</option>
+                <option value="miami">Miami</option>
+            </select></td>
+        </tr>
+    </table>
+</form>
+<br>
+
+<div style="display: flex; justify-content: center;" id="destinasi">
+    <img id = "image">
+
+</div>
+
+<script>
+const berubah = () => {
+const gambar = document.getElementById("gambar");
+const destinasi = document.getElementById("destinasi");
+
+    if(gambar.value === 'seoul'){
+        image.setAttribute('src', 'Seoul.jpg');
+        alert ('anda membuka destinasi Seoul');
+    } else if (gambar.value === 'bangkok'){
+        image.setAttribute('src', 'Bangkok.jpg')
+        alert ('anda membuka destinasi Bangkok');
+    } else if (gambar.value === 'bali'){
+        image.setAttribute('src', 'Bali.jpg')
+        alert ('anda membuka destinasi Bali');
+    } else if (gambar.value === 'london'){
+        image.setAttribute('src', 'London.jpg')
+        alert ('anda membuka destinasi London');
+    }  else if (gambar.value === 'paris'){
+        image.setAttribute('src', 'Paris.jpg')
+        alert ('anda membuka destinasi Paris');
+    }  else if (gambar.value === 'tokyo'){
+        image.setAttribute('src', 'Tokyo.jpg')
+        alert ('anda membuka destinasi Tokyo');
+    }  else if (gambar.value === 'sanghai'){
+        image.setAttribute('src', 'Sanghai.jpg')
+        alert ('anda membuka destinasi Sanghai');
+    }  else if (gambar.value === 'miami'){
+        image.setAttribute('src', 'Miami.jpg')
+        alert ('anda membuka destinasi Miami');
+    }
+}
+</script>
+
+</body>
+</html>
